@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, AppBar, CssBaseline,Toolbar} from '@material-ui/core';
+import { Typography, AppBar, CssBaseline,Toolbar, Grid, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
 import './App.css';
 
@@ -27,6 +27,9 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  desc: {
+    fontSize: 18,
   }
 })
 const App = () => {
@@ -41,7 +44,17 @@ const App = () => {
           </Toolbar>
         </AppBar>
         <main className={classes.main}>
-          <Typography variant="h4">Climate Risk and Early Warning Systems</Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+                <Typography variant="h2">Climate Risk and Early Warning Systems</Typography>
+                 <Typography variant="h5">Papua New Guinea</Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
+                <Typography variant="p" className={classes.desc}>
+CREWS is a mechanism that funds Least Developed Countries (LDC) and Small Island Developing States (SIDS) for risk informed early warning services</Typography>
+            </Grid>
+          </Grid>
+         
         </main>
         <main className={classes.main}>
           <Typography variant="h4">managing App</Typography>
