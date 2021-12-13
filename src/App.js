@@ -50,9 +50,12 @@ const App = () => {
                  <Typography variant="h5">Papua New Guinea</Typography>
             </Grid>
             <Grid item xs={12} md={6}>
+              <Box>
                 <Typography variant="p" className={classes.desc}>
 CREWS is a mechanism that funds Least Developed Countries (LDC) and Small Island Developing States (SIDS) for risk informed early warning services</Typography>
+              </Box>
             </Grid>
+
           </Grid>
          
         </main>
