@@ -1,27 +1,17 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom'
-import { Layout, Typography, Space } from 'antd';
-
-import "./App.css"
-
-import {Navbar, Header} from './components';
+import { Typography, AppBar, Card, CardActionArea, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container} from '@material-ui/core';
+import './App.css';
 const App = () => {
-    return (
-      <div className="app">
-         <div className="crs__navbar container-md">
-            <Navbar />
-         </div>
-        <section className="crs__header container-md">
-          <Header />
-        </section>
-        <section className="crs__main container-md">
-          <Header />
-        </section>
-        <div className="crs__footer container-md">
-              
-        </div>
-      </div>
-    );
+  return (
+    <div>
+      <CssBaseline />
+      <AppBar position="relative" sx={{ height: '10%' }}>
+          <Toolbar>
+            <Typography variant="h6">CREWS PNG</Typography>
+          </Toolbar>
+      </AppBar>
+    </div>
+  )
 }
 
 export default App;
