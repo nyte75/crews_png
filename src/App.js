@@ -1,15 +1,53 @@
 import React from 'react';
-import { Typography, AppBar, Card, CardActionArea, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container} from '@material-ui/core';
+import { Typography, AppBar, CssBaseline,Toolbar} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core'
 import './App.css';
+
+const useStyles = makeStyles({
+  root : {
+    background : 'rgb(45, 55, 78);',
+    
+  },
+  toor: {
+    width: '85%',
+    margin: 'auto',
+  },
+  appbar : {
+    position: 'absolute',
+    background: 'rgba(255, 255, 255, .3)',
+    border: 0,
+    borderRadius: 3,
+    color: 'white',
+    fontSize: 16,
+    padding: '0 30px',
+  },
+  main : {
+    height : '100vh',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
 const App = () => {
+  const classes = useStyles()
   return (
-    <div>
-      <CssBaseline />
-      <AppBar position="relative" sx={{ height: '10%' }}>
+    <div className = {classes.root}>
+      <div className= {classes.toor}>
+        <CssBaseline />
+        <AppBar className={classes.appbar }>
           <Toolbar>
-            <Typography variant="h6">CREWS PNG</Typography>
+            <Typography variant="p">CREWS PNG</Typography>
           </Toolbar>
-      </AppBar>
+        </AppBar>
+        <main className={classes.main}>
+          <Typography variant="h4">Climate Risk and Early Warning Systems</Typography>
+        </main>
+        <main className={classes.main}>
+          <Typography variant="h4">managing App</Typography>
+        </main>
+      </div>
+      
     </div>
   )
 }
