@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, AppBar, CssBaseline,Toolbar, Grid, Box} from '@material-ui/core';
+import { Typography, AppBar, CssBaseline,Toolbar, Grid, Box, Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
 import './App.css';
 
@@ -21,6 +21,10 @@ const useStyles = makeStyles({
     fontSize: 16,
     padding: '0 30px',
   },
+  toolbar: {
+    width: '90%',
+    margin: 'auto',
+  },
   main : {
     height : '100vh',
     display: 'flex',
@@ -39,12 +43,24 @@ const App = () => {
       <div className= {classes.toor}>
         <CssBaseline />
         <AppBar className={classes.appbar }>
-          <Toolbar>
-            <Typography variant="p">CREWS PNG</Typography>
+          <Toolbar className={classes.toolbar} >
+            <Typography variant="p" style={{flexGrow: 1}}>CREWS PNG</Typography>
+            <Button color='inherit'>
+              ABOUT
+            </Button>
+            <Button color='inherit'>
+              IMPACTS
+            </Button>
+            <Button color='inherit'>
+              RESOURCES
+            </Button>
+            <Button color='inherit'>
+              NEWS
+            </Button>
           </Toolbar>
         </AppBar>
         <main className={classes.main}>
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
                 <Typography variant="h2">Climate Risk and Early Warning Systems</Typography>
                  <Typography variant="h5">Papua New Guinea</Typography>
