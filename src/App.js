@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     border: 0,
     borderRadius: 3,
     color: 'white',
-    fontSize: 16,
+    fontSize: '10',
     padding: '0 30px',
   },
   toolbar: {
@@ -62,7 +62,7 @@ const App = () => {
         <main className={classes.main}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
-                <Typography variant="h2">Climate Risk and Early Warning Systems</Typography>
+                <Typography variant="h2" >Climate Risk and Early Warning Systems</Typography>
                  <Typography variant="h5">Papua New Guinea</Typography>
             </Grid>
             <Grid item xs={12} md={6}>
