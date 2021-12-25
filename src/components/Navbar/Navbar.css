@@ -1,0 +1,14 @@
+ .appBar {
+    position: absolute;
+    background: rgba(92, 8, 8, 0.3);
+    border: 0;
+    border-radius: 3;
+    color: white;
+    font-size: 10;
+    padding: 0 30px;
+ }
+
+ .toolBar {
+    width: 90%;
+    margin: auto;
+ }

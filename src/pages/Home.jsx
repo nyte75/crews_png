@@ -1,28 +1,15 @@
 import React from 'react';
-import { Typography, AppBar, CssBaseline,Toolbar, Grid, Box, Button} from '@material-ui/core';
+import { Typography, Grid, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
-import '../App.css';
+import { Navbar } from '../components';
+
 
 const useStyles = makeStyles({
   root : {
     background : 'rgb(45, 55, 78);',
-    
   },
   toor: {
     width: '85%',
-    margin: 'auto',
-  },
-  appbar : {
-    position: 'absolute',
-    background: 'rgba(255, 255, 255, .3)',
-    border: 0,
-    borderRadius: 3,
-    color: 'white',
-    fontSize: '10',
-    padding: '0 30px',
-  },
-  toolbar: {
-    width: '90%',
     margin: 'auto',
   },
   main : {
@@ -36,29 +23,12 @@ const useStyles = makeStyles({
     fontSize: 18,
   }
 })
-const Index = () => {
+const Home = () => {
   const classes = useStyles()
   return (
     <div className = {classes.root}>
       <div className= {classes.toor}>
-        <CssBaseline />
-        <AppBar className={classes.appbar }>
-          <Toolbar className={classes.toolbar} >
-            <Typography variant="p" style={{flexGrow: 1}}>CREWS PNG</Typography>
-            <Button color='inherit'>
-              ABOUT
-            </Button>
-            <Button color='inherit'>
-              IMPACTS
-            </Button>
-            <Button color='inherit'>
-              RESOURCES
-            </Button>
-            <Button color='inherit'>
-              NEWS
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <Navbar />
         <main className={classes.main}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
@@ -84,4 +54,4 @@ CREWS is a mechanism that funds Least Developed Countries (LDC) and Small Island
   )
 }
 
-export default Index;
+export default Home;
