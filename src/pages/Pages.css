@@ -1,0 +1,24 @@
+:root {
+    --color-1: #E8464E;
+    --color-2: #2B3956;
+    --color-3: #4B7196;
+    --color-4: #AFD0DB;
+    --color-5: #E4EFF0;
+
+    --gradient-text: linear-gradient(90deg, rgba(139, 192, 74, 1) 0%, rgba(0, 150, 136, 1) 50%, rgba(63, 81, 181, 1) 100%)
+}
+
+.root {
+      background: var(--color-2);
+}
+.toor{
+      width:85%;
+      margin: auto;
+}
+.main{
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
