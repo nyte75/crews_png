@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Grid, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
-import { Navbar } from '../components';
+import { Navbar, Lgmap, Cardsm } from '../components';
 import './Pages.css'
 
 const grue  = {
@@ -43,7 +43,7 @@ const Home = () => {
               <Box>
                 <Typography variant="p" className={classes.desc}>
                   CREWS is a mechanism that funds Least Developed Countries (LDC) and Small Island Developing 
-                  States (SIDS) for risk informed early warning services<br/><br/>
+                  States (SIDS) for risk informed early warning services.<br/><br/>
                   In Papua New Guinea, CREWS builds the capacity of the national meteorological agency and 
                   strengthens its cooperation with key sectoral ministries, departments and other stakeholders 
                   for agriculture, disaster management, energy and infrastructure.
@@ -53,9 +53,12 @@ const Home = () => {
           </Grid>
          
         </main>
-        <map className="map main">
-          <Typography variant="h4">managing App</Typography>
+        <map className="main lg-map">
+          <Lgmap />
         </map>
+        <main className="main">
+          <Cardsm />
+        </main>
       </div>
       
     </div>

@@ -58,7 +58,9 @@ const Index = () => {
         <CssBaseline />
         <AppBar className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
-            <Typography variant="p" style={{flexGrow:1}}>CREWS PNG</Typography>
+            <Link to='/' style={{flexGrow:1}} className={classes.linkStyle} >
+              <Typography variant="p">CREWS PNG</Typography>
+            </Link>
             <Nav />
             <>
               {toggleMenu

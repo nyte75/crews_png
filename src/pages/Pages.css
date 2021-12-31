@@ -22,3 +22,7 @@
       justify-content: center;
       align-items: center;
 }
+.lg-map {
+      height: 450px;
+      background: var(--color-1);
+}
