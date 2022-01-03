@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Grid, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
-import { Navbar, Lgmap, Cardsm } from '../components';
+import { Navbar, Lgmap, Cardsm, Footer } from '../components';
 import './Pages.css'
 
 const grue  = {
@@ -59,6 +59,7 @@ const Home = () => {
         <main className="main">
           <Cardsm />
         </main>
+        <Footer />
       </div>
       
     </div>
