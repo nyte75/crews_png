@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import { Card, CardContent, CardActions,CardMedia } from '@material-ui/core';
+import React from 'react'
+import { Card, CardContent,CardMedia } from '@material-ui/core';
 import Img from '../../assests/images/shringan.png';
 const index = () => {
     return (
